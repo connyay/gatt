@@ -88,7 +88,12 @@ func (a *Advertisement) unmarshall(b []byte) error {
 		}
 		return u
 	}
-
+	defer func() {
+		if r := recover(); r != nil {
+			log.Error("Advertisement(unmarshal): Recovering from panic.")
+			log.Error(fmt.Sprintf("Debug: b: %s, l: %d, t: %d", b, b[0], b[1]))
+		}
+	}()
 	for len(b) > 0 {
 		if len(b) < 2 {
 			return errors.New("invalid advertise data")
