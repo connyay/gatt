@@ -141,7 +141,7 @@ func (a *Advertisement) unmarshall(b []byte) error {
 		// case typeServiceData32,
 		// case typeServiceData128:
 		default:
-			log.Info(fmt.Sprintf("DATA: [ % X ]", d))
+			log.Debug(fmt.Sprintf("DATA: [ % X ]", d))
 		}
 		b = b[1+l:]
 	}
