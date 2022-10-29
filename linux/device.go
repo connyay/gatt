@@ -2,13 +2,14 @@ package linux
 
 import (
 	"errors"
-	log "github.com/sirupsen/logrus"
 	"sync"
 	"syscall"
 	"unsafe"
 
-	"github.com/XC-/gatt/linux/gioctl"
-	"github.com/XC-/gatt/linux/socket"
+	log "github.com/sirupsen/logrus"
+
+	"github.com/connyay/gatt/linux/gioctl"
+	"github.com/connyay/gatt/linux/socket"
 )
 
 type device struct {

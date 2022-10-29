@@ -1,4 +1,5 @@
-// +build
+//go:build ignore
+// +build ignore
 
 package main
 
@@ -6,12 +7,13 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	log "github.com/sirupsen/logrus"
 	"time"
 
-	"github.com/XC-/gatt"
-	"github.com/XC-/gatt/examples/service"
-	"github.com/XC-/gatt/linux/cmd"
+	log "github.com/sirupsen/logrus"
+
+	"github.com/connyay/gatt"
+	"github.com/connyay/gatt/examples/service"
+	"github.com/connyay/gatt/linux/cmd"
 )
 
 // server_lnx implements a GATT server.

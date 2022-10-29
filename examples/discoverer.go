@@ -1,13 +1,15 @@
-// +build
+//go:build ignore
+// +build ignore
 
 package main
 
 import (
 	"fmt"
+
 	log "github.com/sirupsen/logrus"
 
-	"github.com/XC-/gatt"
-	"github.com/XC-/gatt/examples/option"
+	"github.com/connyay/gatt"
+	"github.com/connyay/gatt/examples/option"
 )
 
 func onStateChanged(d gatt.Device, s gatt.State) {

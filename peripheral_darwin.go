@@ -2,9 +2,10 @@ package gatt
 
 import (
 	"errors"
+
 	log "github.com/sirupsen/logrus"
 
-	"github.com/XC-/gatt/xpc"
+	"github.com/connyay/gatt/xpc"
 )
 
 type peripheral struct {

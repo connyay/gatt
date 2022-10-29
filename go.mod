@@ -1,4 +1,4 @@
-module github.com/XC-/gatt
+module github.com/connyay/gatt
 
 go 1.13
 

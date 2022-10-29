@@ -3,11 +3,12 @@ package linux
 import (
 	"fmt"
 	"io"
-	log "github.com/sirupsen/logrus"
 	"sync"
 
-	"github.com/XC-/gatt/linux/cmd"
-	"github.com/XC-/gatt/linux/evt"
+	log "github.com/sirupsen/logrus"
+
+	"github.com/connyay/gatt/linux/cmd"
+	"github.com/connyay/gatt/linux/evt"
 )
 
 type HCI struct {

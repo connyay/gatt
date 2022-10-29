@@ -5,12 +5,12 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"io"
 	log "github.com/sirupsen/logrus"
+	"io"
 	"net"
 	"strings"
 
-	"github.com/XC-/gatt/linux"
+	"github.com/connyay/gatt/linux"
 )
 
 type peripheral struct {

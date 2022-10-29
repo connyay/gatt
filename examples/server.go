@@ -1,14 +1,16 @@
-// +build
+//go:build ignore
+// +build ignore
 
 package main
 
 import (
 	"fmt"
+
 	log "github.com/sirupsen/logrus"
 
-	"github.com/XC-/gatt"
-	"github.com/XC-/gatt/examples/option"
-	"github.com/XC-/gatt/examples/service"
+	"github.com/connyay/gatt"
+	"github.com/connyay/gatt/examples/option"
+	"github.com/connyay/gatt/examples/service"
 )
 
 func main() {

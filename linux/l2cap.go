@@ -3,9 +3,10 @@ package linux
 import (
 	"fmt"
 	"io"
+
 	log "github.com/sirupsen/logrus"
 
-	"github.com/XC-/gatt/linux/cmd"
+	"github.com/connyay/gatt/linux/cmd"
 )
 
 type aclData struct {

@@ -1,17 +1,19 @@
-// +build
+//go:build ignore
+// +build ignore
 
 package main
 
 import (
 	"flag"
 	"fmt"
-	log "github.com/sirupsen/logrus"
 	"os"
 	"strings"
 	"time"
 
-	"github.com/XC-/gatt"
-	"github.com/XC-/gatt/examples/option"
+	log "github.com/sirupsen/logrus"
+
+	"github.com/connyay/gatt"
+	"github.com/connyay/gatt/examples/option"
 )
 
 var done = make(chan struct{})

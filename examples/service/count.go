@@ -2,10 +2,11 @@ package service
 
 import (
 	"fmt"
-	log "github.com/sirupsen/logrus"
 	"time"
 
-	"github.com/XC-/gatt"
+	log "github.com/sirupsen/logrus"
+
+	"github.com/connyay/gatt"
 )
 
 func NewCountService() *gatt.Service {

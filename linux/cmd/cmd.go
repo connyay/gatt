@@ -5,10 +5,11 @@ import (
 	"errors"
 	"fmt"
 	"io"
+
 	log "github.com/sirupsen/logrus"
 
-	"github.com/XC-/gatt/linux/evt"
-	"github.com/XC-/gatt/linux/util"
+	"github.com/connyay/gatt/linux/evt"
+	"github.com/connyay/gatt/linux/util"
 )
 
 type CmdParam interface {
